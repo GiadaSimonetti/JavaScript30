@@ -10,3 +10,4 @@ Exercises from [https://JavaScript30.com](https://JavaScript30.com)
 - Day 06 - Type Ahead
 - Day 07 - Array Cardio Day 2
 - Day 08 - Fun with HTML5 Canvas
+- Day 09 - Dev Tools Domination
