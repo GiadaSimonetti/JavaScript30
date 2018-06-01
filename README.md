@@ -11,3 +11,4 @@ Exercises from [https://JavaScript30.com](https://JavaScript30.com)
 - Day 07 - Array Cardio Day 2
 - Day 08 - Fun with HTML5 Canvas
 - Day 09 - Dev Tools Domination
+- Day 10 - Hold Shift to Check Multiple Checkboxes
