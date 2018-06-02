@@ -12,3 +12,4 @@ Exercises from [https://JavaScript30.com](https://JavaScript30.com)
 - Day 08 - Fun with HTML5 Canvas
 - Day 09 - Dev Tools Domination
 - Day 10 - Hold Shift to Check Multiple Checkboxes
+- Day 11 - Custom Video Player
