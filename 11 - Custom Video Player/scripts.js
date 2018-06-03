@@ -6,20 +6,12 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
-const screenSize = document.querySelector('.screen__size');
+const fullScreen = player.querySelector('.fullscreen');
 
 /* Build out functions */
 function togglePlay() {
   const method = video.paused ? 'play' : 'pause';
   video[method]();
-  console.log(video.videoHeight);
-  console.log(video.videoWidth);
-  console.log('inner');
-  console.log(window.innerWidth);
-  console.log(window.innerHeight);
-  console.log('outer');
-  console.log(window.outerWidth);
-  console.log(window.outerHeight);
 }
 
 function updateButton() {
@@ -46,24 +38,9 @@ function scrub(e) {
   video.currentTime = scrubTime;
 }
 
-function toggleScreen() {
-  const normalWidth = video.videoWidth;
-  const normalHeight = video.videoHeight;
-  const fullWidth = video.style.width = '1280px';
-  const fullHeight = video.style.height = '716px';
-  if (normalWidth === 640 && normalHeight === 358) {
-    video.style.width = window.innerWidth;
-    video.style.height = window.innerHeight;
-  } else {
-    video.style.width = '640px';
-    video.style.height = '358px';
-  }
-}
+function goFullScreen() {
+    player.classList.toggle('fullscreen');
 
-function updateSizeButton() {
-  const symbol = this.value ? 'Full Sreen' : 'Small Screen';
-  console.log(symbol);
-  screenSize.textContent = symbol;
 }
 
 /* Hook up the event listeners */
@@ -72,8 +49,8 @@ video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
 
-screenSize.addEventListener('click', toggleScreen);
-screenSize.addEventListener('click', updateSizeButton);
+//FullScreen
+fullScreen.addEventListener('click', goFullScreen);
 
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click', skip));
