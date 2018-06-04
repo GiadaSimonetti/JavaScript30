@@ -1,6 +1,6 @@
 # JavaScript30
 
-Exercises from [https://JavaScript30.com](https://JavaScript30.com)
+Exercises from [JavaScript30](https://JavaScript30.com)
 
 - Day 01 - JavaScript Drum Kit
 - Day 02 - CSS + JS Clock
@@ -14,3 +14,4 @@ Exercises from [https://JavaScript30.com](https://JavaScript30.com)
 - Day 10 - Hold Shift to Check Multiple Checkboxes
 - Day 11 - Custom Video Player
 - Day 12 - Key Sequence Detection
+- Day 13 - Side in on Scroll
