@@ -15,3 +15,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 11 - Custom Video Player
 - Day 12 - Key Sequence Detection
 - Day 13 - Side in on Scroll
+- Day 14 - JavaScript References VS Copying
