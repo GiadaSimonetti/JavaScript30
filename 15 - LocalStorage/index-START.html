@@ -22,8 +22,10 @@
     <form class="add-items">
       <input type="text" name="item" placeholder="Item Name" required>
       <input type="submit" value="+ Add Item">
-      <button type="button" name="clearAll" class="delete">Delete</button>
     </form>
+    <button type="button" name="clearAll" class="delete">Delete</button>
+    <button type="button" name="checkAll" class="button">Check All</button>
+    <button type="button" name="checkNone" class="button">Uncheck All</button>
   </div>
 
 <script>
@@ -32,7 +34,7 @@
   const items = JSON.parse(localStorage.getItem('items') )|| [];
 
   const deleteButton = document.querySelector('.delete')
-
+  const buttons = document.querySelectorAll('.button')
 
   function addItem(e){
     e.preventDefault();
@@ -74,13 +76,24 @@
     populateList([], itemsList)
   }
 
+  function handleButton(e) {
+    items.forEach(function(item, index, array) {
+      e.target.name === 'checkAll'
+        ? (items[index].done = true)
+        : (items[index].done = false)
+    })
+    console.log(items)
+    localStorage.setItem('items', JSON.stringify(items))
+    populateList(items, itemsList)
+  }
 
-  addItems.addEventListener('submit', addItem);
-  itemsList.addEventListener('click', toggleDone);
+addItems.addEventListener('submit', addItem);
+itemsList.addEventListener('click', toggleDone);
 
-  deleteButton.addEventListener('click', deleteHandler)
+deleteButton.addEventListener('click', deleteHandler)
+buttons.forEach(button => button.addEventListener('click', handleButton))
 
-  populateList(items, itemsList);
+populateList(items, itemsList);
 
 </script>
 
