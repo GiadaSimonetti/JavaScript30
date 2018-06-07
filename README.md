@@ -16,4 +16,5 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 12 - Key Sequence Detection
 - Day 13 - Side in on Scroll
 - Day 14 - JavaScript References VS Copying
-- Day 15 - LocalStorage
+- Day 15 - LocalStorage and event delegation
+- Day 16 - Mouse Move Shadow
