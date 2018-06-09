@@ -19,3 +19,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 15 - LocalStorage and event delegation
 - Day 16 - Mouse Move Shadow
 - Day 17 - Sort Without Articles
+- Day 18 - Adding Up Times with Reduce
