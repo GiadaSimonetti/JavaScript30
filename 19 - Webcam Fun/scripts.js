@@ -27,4 +27,21 @@ function paintToCanvas() {
   }, 16);
 }
 
+function takePhoto() {
+  //played the camera sound
+  snap.currentTime = 0;
+  snap.play();
+
+  // take the data aout of the canvas
+  const data = canvas.toDataURL('/imag/jpeg');
+  const link = document.createElement('a');
+  link.href = data;
+  link.setAttribute('download', 'handsome');
+  link.textContent = 'Download Image';
+  strip.insertBefore(link, strip.firstChild);
+
+}
+
 getVideo();
+
+video.addEventListener('canplay', paintToCanvas)
