@@ -9,29 +9,37 @@
   <div class="words" contenteditable>
   </div>
 
-<script>
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  <script>
 
-  const recognition = new SpeechRecognition();
+    window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-  recognition.interimResults = true;
+    const recognition = new SpeechRecognition();
 
-  let p = document.createElement('p');
-  const words = document.querySelector('.words');
-  words.appendChild(p);
+    recognition.interimResults = true;
 
-  recognition.addEventListener('results', e => {
-    const transcript = Array.from(e.results)
-      .map(result => result[0])
-      .map(result => result.transcript)
-      .join('');
-  });
+    recognition.lang = 'en-US';
 
-  recognition.addEventListener('end', recognition.start);
+    let p = document.createElement('p');
+    const words = document.querySelector('.words');
+    words.appendChild(p);
 
-  recognition.start();
+    recognition.addEventListener('result', e => {
+      const transcript = Array.from(e.results)
+        .map(result => result[0])
+        .map(result => result.transcript)
+        .join('');
 
-</script>
+        if (e.results[0].isFinal) {
+          p = document.createElement('p');
+          words.appendChild(p);
+        }
+    });
+
+    recognition.addEventListener('end', recognition.start);
+
+    recognition.start();
+
+  </script>
 
 
   <style>
