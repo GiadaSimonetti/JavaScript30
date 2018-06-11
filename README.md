@@ -21,3 +21,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 17 - Sort Without Articles
 - Day 18 - Adding Up Times with Reduce
 - Day 19 - Webcam Fun
+- Day 20 - Speech Detection
