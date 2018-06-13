@@ -23,3 +23,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 19 - Webcam Fun
 - Day 20 - Speech Detection
 - Day 21 - Geolocation
+- Day 22 - Follow Along Link Highlighter
