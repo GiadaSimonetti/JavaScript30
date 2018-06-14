@@ -24,3 +24,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 20 - Speech Detection
 - Day 21 - Geolocation
 - Day 22 - Follow Along Link Highlighter
+- Day 23 - Speech Synthesis
