@@ -29,3 +29,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 25 - Event Capture, Propagation, Bubbling and Once
 - Day 26 - Stripe Follow Along Nav
 - Day 27 - Click and Drag
+- Day 28 - Video Speed Controller
