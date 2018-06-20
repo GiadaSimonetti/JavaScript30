@@ -35,6 +35,10 @@ function displayEndTime(timestamp) {
   const end = new Date(timestamp);
   const hour = end.getHours();
   const minutes = end.getMinutes();
-  endTime.textContent = `Be Back at ${hour}:${minutes}`
+  endTime.textContent = `Be Back at ${hour}:${minutes < 10 ? '0' : ''}${minutes}`
+
+  // canadian
+  // const adjustedHour = hour > 12 ? hour - 12 : hour;
+  // endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0' : ''}${minutes}`;
 
 }
