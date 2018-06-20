@@ -30,3 +30,4 @@ Exercises from [JavaScript30](https://JavaScript30.com)
 - Day 26 - Stripe Follow Along Nav
 - Day 27 - Click and Drag
 - Day 28 - Video Speed Controller
+- Day 29 - Countdown Timer
